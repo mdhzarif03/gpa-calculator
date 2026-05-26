@@ -1,5 +1,3 @@
-Set-Content -Path README.md -Value "# 🎓 SSC GPA Calculator 2026
-
 A modern, responsive, and accurate GPA calculator specifically designed for the **Bangladesh SSC (NCTB) 2026** curriculum. It supports Science, Business Studies, and Humanities groups with intelligent subject-swapping logic.
 
 ## ✨ Features
