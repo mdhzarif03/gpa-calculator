@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <div class="topper">
+            <div id="greeting">Welcome, Scholar</div>
+            <div class="brand">SSC Calculator <span>2026 Edition</span></div>
+        </div>
+
+        <div class="main-layout">
+            <main class="calculator-card">
+                <div class="group-toggle">
+                    <button id="sciBtn" class="active" onclick="switchGroup('science')">Science</button>
+                    <button id="comBtn" onclick="switchGroup('commerce')">Business Studies</button>
+                    <button id="artsBtn" onclick="switchGroup('humanities')">Humanities</button>
+                </div>
+
+                <div id="subject-grid" class="subject-grid">
+                    </div>
+
+                <div class="optional-section">
+                    <h3>Optional (4th Subject) Selection</h3>
+                    <div class="opt-controls">
+                        <div class="select-wrapper">
+                            <select id="opt-name" onchange="handleSubjectSwap()">
+                                </select>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="number" id="opt-marks" placeholder="Marks">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="calc-trigger" onclick="runEngine()">Calculate Final GPA</button>
+
+                <div id="result-display" class="result-display">
+                    <span class="label">Total GPA</span>
+                    <div id="gpa-score">0.00</div>
+                    <div id="grade-status">Enter your marks above</div>
+                </div>
+            </main>
+
+            <aside class="side-info">
+                <div class="info-box">
+                    <h4>Grading Policy</h4>
+                    <p>80-100 : 5.00 (A+)</p>
+                    <p>70-79 : 4.00 (A)</p>
+                    <p>60-69 : 3.50 (A-)</p>
+                    <p>50-59 : 3.00 (B)</p>
+                    <p>40-49 : 2.00 (C)</p>
+                    <p>33-39 : 1.00 (D)</p>
+                    <p>00-32 : 0.00 (F)</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
