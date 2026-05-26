@@ -14,9 +14,6 @@ A modern, responsive, and accurate GPA calculator specifically designed for the 
 * **Modern UI:** Built with a clean, 'Sunset Violet' glassmorphism design.
 * **Responsive:** Works perfectly on mobile, tablets, and desktops.
 
-## ?? Live Demo
-[Check it out here!](https://mdhzarif03.github.io/gpa-calculator/)
-
 ## ?? How to Use
 1. Select your **Group**.
 2. Choose your **Optional (4th) Subject**.
